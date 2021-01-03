@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ZLNR</title>
+    <meta content="width=device-width,initial-scale=0.9,, maximum-scale=1.0, user-scalable=no"
+          name="viewport"/>
+
+    <script src="jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="jquery-ui-1.7.2.custom.min.js" type="text/javascript"></script>
+    <script src="jquery.bgiframe.min.js" type="text/javascript"></script>
+    <link href="redmond/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+            var username="";
+            var urls="";
+            function myFunction(nr,uname,url) {
+                username=uname;
+                urls=url;
+                $.ajax({
+                       type: "POST",
+                       url: url + "/webservice/mobileservice.asmx/GetWorkInfo",
+                       data: { id: nr },
+                       success: function (mes) {
+                       $("#ZLNR").html(mes);
+
+                        dbgetscript(nr,uname)
+                       $("input").blur(function () {
+
+                                       this.setAttribute('value', this.value);
+
+                                       });
+                       $("textarea").blur(function () {
+                                          var obj = this;
+                                          obj.innerHTML = this.value;
+                                          });
+                       $("select").blur(function () {
+                                        this.options[this.selectedIndex].setAttribute('selected', true);
+                                        });
+                       $(":input").click(function () {
+
+                                         if ($(this).attr("id").indexOf("TextArea") >= 0) {
+                                       <!--  alert($(this).attr("id") + "_" + $(this).val());setsbname
+                                         }
+                                         });
+
+
+               $("#img1404918026").click(function () {
+
+                        alert("img1404918026");
+                        });
+
+                       var date = new Date();
+                       var seperator1 = "-";
+                       var seperator2 = ":";
+                       var month = date.getMonth() + 1;
+                       var strDate = date.getDate();
+                       if (month >= 1 && month <= 9) {
+                       month = "0" + month;
+                       }
+                       if (strDate >= 0 && strDate <= 9) {
+                       strDate = "0" + strDate;
+                       }
+                       var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+                       if (document.getElementById("yd1") != null) {
+
+                       }
+                       }
+                       });
+            }
+
+
+
+            function setsbname(name,id) {
+
+                  document.getElementById("Text1557265958").value = name;
+                  document.getElementById("Text214255008").value = id;
+                }
+
+
+        function setjydjname(name,id,value) {
+                   document.getElementById("Text953451332").value = name;
+                  document.getElementById("Text214255008").value = id;
+                     document.getElementById("Drop1276945602").value = value;
+                }
+
+            function sethcname(name,id,name1) {
+
+                  document.getElementById("Text1798812735").value = name;
+                  document.getElementById("Text214255008").value = id;
+
+                }
+
+                function setwx(name) {
+                    $("#Drop1276945602").attr('readonly', 'readonly');
+                  document.getElementById("Drop1276945602").value = name;
+                }
+
+
+         function settime(name) {
+                  document.getElementById("Date1008992615").value = name;
+                }
+
+
+    function SetQM(zp,step)
+            {
+                var obimg=document.getElementById("imgUserName"+step);
+                obimg.setAttribute("src","http://116.62.238.239:61645"+zp);
+
+            }
+        function myFunction2(nr,uname,url,wid) {
+            username=uname;
+            urls=url;
+            $.ajax({
+                   type: "POST",
+                   url: url+"/webservice/mobileservice.asmx/GetNFormContent",
+                   data: { id: nr, wid: wid, uname: uname },
+                   success: function (mes) {
+                   $("#ZLNR").html(mes);
+                     alert("passworderror");
+                    getscript(nr, uname, url, wid);
+                   $("input").blur(function () {
+
+                                   this.setAttribute('value', this.value);
+
+                                   });
+                   $("textarea").blur(function () {
+                                      var obj = this;
+                                      obj.innerHTML = this.value;
+                                      });
+                   $("select").blur(function () {
+                                    this.options[this.selectedIndex].setAttribute('selected', true);
+
+
+                                    });
+                   $(":input").click(function () {
+                                  if ($(this).attr("id") == 'Text1557265958' ) {
+                                  $(this).attr("readonly","readonly");
+                                  $(this).blur();
+                                  alert("申购");
+                                  if (value == "") {
+                                    <!--  alert($(this).attr("id") + "_" + $('#Drop1276945602').val());-->
+                                  }
+                                }
+
+                                 if ($(this).attr("id") == 'Text953451332' ) {
+                                       alert("借用登记");
+                                }
+
+                         });
+
+                               var date = new Date();
+                               var seperator1 = "-";
+                               var seperator2 = ":";
+                               var month = date.getMonth() + 1;
+                               var strDate = date.getDate();
+                               if (month >= 1 && month <= 9) {
+                               month = "0" + month;
+                               }
+                               if (strDate >= 0 && strDate <= 9) {
+                               strDate = "0" + strDate;
+                               }
+                               var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+                               if (document.getElementById("yd1") != null) {
+
+                               }
+
+                        if ($("#Date1511608062")) {
+                        var dateStr = new Date().Format("yyyy/MM/dd HH:mm");
+                        $("#Date1511608062").val(dateStr);
+                    }
+                        if ($("#Date1008992615")) {
+                        var dateStr = new Date().Format("yyyy/MM/dd HH:mm");
+                        $("#Date1008992615").val(dateStr);
+
+                        $("#Date1008992615").click(function () {
+                            $("#Date1008992615").attr("readonly", "readonly");
+                            $("#Date1008992615").blur();
+                        alert("Date1008992615");
+                        });
+                    }
+                               }
+                   });
+        }
+
+        function myFunction3(nr,url) {
+
+            urls=url;
+            $.ajax({
+                   type: "POST",
+                   url: url+"/webservice/mobileservice.asmx/GetWorkInfo",
+                   data: { id: nr},
+                   success: function (mes) {
+
+
+                   $("#ZLNR").html(mes);
+
+
+
+                   }
+                   });
+        }
+
+        function getscript(nr, uname, url, wid) {
+            username = uname;
+            $.ajax({
+                   type: "POST",
+                   url: url+"/webservice/mobileservice.asmx/GetSCRIPT",
+                   data: { id: nr, wid: wid, uname: escape(uname) },
+                   success: function (mes) {
+
+                   $("#js").html(mes);
+
+
+
+                   }
+                   });
+        }
+
+
+
+
+
+
+        function getNowFormatDate() {
+            var date = new Date();
+            var seperator1 = "-";
+            var seperator2 = ":";
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+            return currentdate;
+        }
+        function setvalue(id, v) {
+            var curname = username;
+            var ctime = getNowFormatDate();
+            $("#" + id).val(v);
+            if (id.indexOf("TextArea") >= 0) {
+                if (v.toString().indexOf(ctime) == -1) {
+                    $("#"+id).val(v + "  " + curname + "  " + ctime);
+                    //document.getElementById(id).innerHTML = v + "  " + curname + "  " + ctime;
+                }
+                else {
+                    $("#"+id).val(v);
+                }
+            }
+            $("#TextBox1").val(v);
+        }
+        function dbgetscript(nr,uname) {
+            $.ajax({
+                   type: "POST",
+                   url: urls+"/webservice/mobileservice.asmx/DBGetSCRIPT",
+                   data: { id: nr,uname:escape(uname) },
+                   success: function (mes) {
+                   $("#js").html(mes);
+
+                   }
+                   });
+        }
+
+        function openDialogV(div, width, height, title) {
+            $("#" + div).dialog({
+                                bgiframe: true,
+                                autoOpen: false,
+                                width: width,
+                                height: height,
+                                modal: true,
+                                resizable: false,
+                                title: title,
+                                close: function () {
+                                $(this).dialog('destroy');
+                                },
+                                buttons: {
+                                "关闭": function () { $(this).dialog('destroy'); }
+                                }
+                                });
+                                $("#" + div).dialog("open");
+        }
+        var imgid = "";
+        function selectyinzhang(id) {
+            $.ajax({
+                   type: "POST",
+                   url: urls+"/webservice/mobileservice.asmx/GetYZ",
+                   data: { username: escape(username) },
+                   success: function (mes) {
+                   $("#divDlg").html(mes);
+
+                   openDialogV("divDlg", 350, 220, "");
+
+
+
+                   }
+                   });
+                   imgid = id;
+        }
+
+        function selectyinzhang1() {
+
+        }
+         Date.prototype.Format = function (fmt) {
+            var o = {
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "H+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds(), //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                "S": this.getMilliseconds() //毫秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+        function closeDialog() {
+            $("#divDlg").dialog("close");
+        }
+        function getZLNR() {
+        Load_Do();
+        var nr=$("#ZLNR").html();
+        var fordata = $("#form1").serialize();
+        return  nr + "WoEaSy" + fordata;
+        }
+        function qd() {
+            var va= $("#yz").val();
+            var mm= $("#mm").val();
+            $.ajax({
+                   type: "POST",
+                   url: urls+"/webservice/mobileservice.asmx/HQYZ",
+                   data: { imgvalue: va, mm: mm },
+                   success: function (mes) {
+                   if (mes == 1) {
+                   imgid.src = urls+"/UploadFile/" + va;
+                   closeDialog();
+                   } else {
+                   alert("password error!");
+                   }
+                }
+            });
+        }
+
+          function Load_Do() {
+            var cc = document.getElementById("form1").elements;
+            for (var i = 0; i < cc.length; i++) {
+                if (cc.item(i).id.indexOf("TextArea") >= 0) {
+                    cc.item(i).innerHTML = cc.item(i).value;
+                }
+                else if (cc.item(i).id.indexOf("Text") >= 0 || cc.item(i).name.indexOf("Num") >= 0 || cc.item(i).name.indexOf("Date") >= 0) {
+                    cc.item(i).setAttribute('value', cc.item(i).value);
+                }
+                else if (cc.item(i).id.indexOf("CHK") >= 0) {
+                    if (cc.item(i).checked) {
+                        cc.item(i).setAttribute('checked', 'checked');
+                    }
+                    else {
+                        cc.item(i).removeAttribute('checked');
+                    }
+                }
+                else if (cc.item(i).id.indexOf("Drop") >= 0) {
+                cc.item(i).removeAttribute ('disabled');
+                    for (var j = 0; j < cc.item(i).length; j++) {
+                        cc.item(i).options[j].removeAttribute ('disabled');
+                        if (cc.item(i).options[j].selected == true) {
+                            cc.item(i).options[j].setAttribute('selected', 'selected');
+                        }
+                        else {
+                            cc.item(i).options[j].removeAttribute('selected');
+                        }
+                    }
+                }
+                else if (cc.item(i).id.indexOf("img") >= 0) {
+                    cc.item(i).setAttribute('src', cc.item(i).src);
+                }
+                else if (cc.item(i).id.indexOf("file") >= 0) {
+                    cc.item(i).innerHTML = cc.item(i).innerHTML;
+                    cc.item(i).setAttribute('href', cc.item(i).href);
+                }
+            }
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+<form id="form1">
+    <div id="ZLNR">
+    </div>
+</form>
+<div id="js">
+</div>
+<div id="divDlg" style="display: none;">
+</div>
+</body>
+</html>

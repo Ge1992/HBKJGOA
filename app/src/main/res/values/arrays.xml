@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="zt">
+        <item>文单</item>
+        <item>正文</item>
+        <item>流程</item>
+    </string-array>
+
+
+    <string-array name="lb">
+        <item>审计项目进度</item>
+        <item>项目整改落实情况</item>
+        <item>考核事项</item>
+
+    </string-array>
+
+    <string-array name="tysj">
+        <item>姓名</item>
+        <item>工作时间</item>
+        <item>性别</item>
+        <item>归属地区</item>
+        <item>出生日期</item>
+        <item>学历</item>
+        <item>所学专业</item>
+        <item>人员性质</item>
+        <item>工作单位及职务</item>
+        <item>手机</item>
+        <item>备注说明</item>
+        <item>录入人</item>
+        <item>录入时间</item>
+    </string-array>
+
+
+    <string-array name="sjggtd">
+        <item>姓名</item>
+        <item>单位</item>
+        <item>出生年月</item>
+        <item>所处处室</item>
+        <item>职务</item>
+        <item>从事审计工作年份</item>
+        <item>学历</item>
+        <item>职称</item>
+        <item>相关资质</item>
+        <item>录入人</item>
+        <item>录入时间</item>
+    </string-array>
+
+    <string-array name="sjs">
+        <item>姓名</item>
+        <item>单位/部门</item>
+        <item>职务</item>
+        <item>性别</item>
+        <item>年龄</item>
+        <item>毕业院校及专业</item>
+        <item>联系电话</item>
+        <item>QQ</item>
+        <item>注册</item>
+        <item>证书</item>
+        <item>备注说明</item>
+        <item>录入人</item>
+        <item>录入时间</item>
+    </string-array>
+
+
+    <string-array name="zjks">
+        <item>姓名</item>
+        <item>年度</item>
+        <item>性别</item>
+        <item>单位</item>
+        <item>班级性质</item>
+        <item>期次</item>
+        <item>人员期次序号</item>
+        <item>是否调离</item>
+        <item>备注说明</item>
+    </string-array>
+
+
+
+    <string-array name="meetlx">
+        <item>未开始</item>
+        <item>进行中</item>
+        <item>已结束</item>
+    </string-array>
+
+
+
+    <string-array name="meet_xq">
+        <item>会议标题</item>
+        <item>会议主题</item>
+        <item>会议描述</item>
+        <item>会议出席人</item>
+        <item>会议室地址</item>
+        <item>会议主持人</item>
+        <item>开始时间</item>
+        <item>结束时间</item>
+        <item>会议纪要</item>
+        <item>会议总结</item>
+        <item>审核人</item>
+        <item>审核时间</item>
+        <item>审核状态</item>
+    </string-array>
+
+
+
+
+</resources>

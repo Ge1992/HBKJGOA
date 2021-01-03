@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="兵役退役"
+        android:paddingTop="10dp"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    </LinearLayout>
+    <!--线条部分-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#5292f8"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/time_cycle" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#5292f8" />
+    </LinearLayout>
+    <!--文字部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="兵役退役"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textSize="14dp"
+            android:textColor="#ABABAB" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/btground" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textSize="14dp"
+            android:textColor="@color/blue" />
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text4"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textSize="15dp"
+            android:textColor="#ABABAB" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/dzgg_R1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcfcfc"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/qd"
+        />
+
+
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageItem"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="项目名称"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text01"
+        android:layout_toRightOf="@id/imageItem"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="项目名称"
+        android:textColor="@color/bule"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/text03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/text02"
+        android:layout_toRightOf="@id/imageItem"
+        android:text="政府投资项目标底审计意见—"
+        android:textColor="#666" />
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_margin="5dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+
+        android:layout_below="@+id/text03"
+        android:layout_toRightOf="@id/imageItem"
+        />
+</RelativeLayout>

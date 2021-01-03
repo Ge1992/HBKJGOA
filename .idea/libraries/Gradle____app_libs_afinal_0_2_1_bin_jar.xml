@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/afinal-0.2.1-bin.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/afinal-0.2.1-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

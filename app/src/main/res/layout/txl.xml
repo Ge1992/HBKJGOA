@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/title1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/btground"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="项目联系"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+
+        <ImageView
+            android:id="@+id/imahe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="bt_back"
+            android:padding="10dp"
+            android:src="@mipmap/left_arrow_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d6d6" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.example.hbkjgoa.xlistview.XListView
+            android:id="@+id/XKListView"
+            android:layout_above="@+id/ti"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:footerDividersEnabled="false" />
+        <RelativeLayout
+            android:id="@+id/ti"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"  >
+            <Button
+                android:id="@+id/serch"
+                android:layout_width="140dp"
+                android:layout_height="37dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/out1_selector4"
+                android:text="确 定"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

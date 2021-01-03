@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/AMap3DMap_7.0.0_AMapSearch_6.9.2_AMapLocation_4.7.0_20190924.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/AMap3DMap_7.0.0_AMapSearch_6.9.2_AMapLocation_4.7.0_20190924.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

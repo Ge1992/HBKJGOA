@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#eee"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical" >
+
+
+
+
+	<RelativeLayout
+		android:id="@+id/R1"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:background="#179efc"
+		android:padding="5dp"
+		>
+		<ImageView
+			android:id="@+id/imahe"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:onClick="bt_back"
+			android:padding="10dp"
+			android:src="@mipmap/left_arrow_icon" />
+		<TextView
+			android:id="@+id/ziliao02_sZLZT"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="签名"
+			android:textColor="#ffffff"
+			android:textSize="20sp" />
+
+		<Button
+			android:id="@+id/save"
+			android:layout_width="67dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="5dp"
+			android:text="上传"
+			android:textColor="#fff"
+			android:textSize="15sp"
+			android:background="@null"/>
+	</RelativeLayout>
+
+
+
+
+
+
+	<com.example.hbkjgoa.news.sin.MyView
+        android:id="@+id/handwriteview"
+        android:layout_below="@+id/R1"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="530dp" />
+
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_below="@+id/handwriteview"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/main_title_bg"
+        android:text="重写" />
+
+</RelativeLayout>

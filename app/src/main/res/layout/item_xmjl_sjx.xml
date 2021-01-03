@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+         android:background="@drawable/single_layout_selector"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageItem"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageItem"
+            android:padding="5dp"
+            android:text="Re:蒲公英“畅享世界杯”竞猜活动中奖通知"
+            android:textColor="#4a4a4a"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/xmmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageItem"
+                android:layout_below="@+id/title"
+            android:text="竞猜活动中奖通知"
+            android:textColor="@color/blue"
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bkItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/xmmc"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="hjldare"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/bkItem"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="2018/7/18 9:58:49"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/zt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bkItem"
+            android:layout_alignBottom="@+id/bkItem"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="未读"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

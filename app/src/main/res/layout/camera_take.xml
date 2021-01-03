@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<SurfaceView
+	     android:id="@+id/camera_take_surfaceView1" 
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     />
+
+	<Button
+	    android:id="@+id/camera_take_button1"
+	    android:layout_width="60dip"
+	    android:layout_height="60dip"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="@mipmap/record2"
+	    />
+	
+	<Button 
+	    android:id="@+id/camera_take_button2"
+	    android:text="取消"
+	    android:layout_width="80dp"
+	    android:layout_height="60dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="@null"
+	    android:textColor="#ffffff"
+	    android:textSize="17sp"
+	    />
+	<Button 
+	    android:id="@+id/camera_take_button3"
+	    android:text="保存"
+	   android:layout_width="80dp"
+	    android:layout_height="60dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:background="@null"
+	     android:textColor="#ffffff"
+	    android:textSize="17sp"
+	    />
+
+</RelativeLayout> 
+

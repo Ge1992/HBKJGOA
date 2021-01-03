@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#efeff4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+
+
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+      <RelativeLayout
+          android:id="@+id/title"
+          android:layout_width="fill_parent"
+          android:layout_height="45dp"
+          android:background="@color/btground"
+          android:gravity="center_vertical">
+
+          <ImageView
+              android:id="@+id/imahe"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:onClick="bt_back"
+              android:padding="10dp"
+              android:src="@mipmap/left_arrow_icon" />
+
+          <TextView
+              android:id="@+id/Text2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="详细信息"
+              android:textColor="@color/white"
+              android:textSize="20sp" />
+
+
+      </RelativeLayout>
+
+        <com.example.hbkjgoa.xlistview.XListView
+            android:id="@+id/XKListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:headerDividersEnabled="true"
+             android:cacheColorHint="#00000000"
+            android:footerDividersEnabled="false" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:fitsSystemWindows="true"
+      android:background="#ffffff" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/ziliao01R"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/black"
+    	android:padding="4dp"
+    	android:visibility="gone"
+        >
+        <ImageView android:id="@+id/Image1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   	android:background="@mipmap/user"
+		   	android:layout_margin="7dp"
+		   	android:layout_centerVertical="true"
+	    />
+        <TextView android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/white"
+		    android:textSize="15sp"
+		    android:text="欢迎你，用户名!"
+		    android:layout_toRightOf="@+id/Image1"
+		    android:layout_centerVertical="true"
+            />
+        <Button 
+            android:layout_width="100dp"
+		    android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:onClick="bt_back2"
+            />
+    </RelativeLayout>
+    
+        <RelativeLayout
+			android:id="@+id/bt"
+        android:layout_width="fill_parent"
+    	android:layout_height="50dp"
+    	android:background="#179efc"
+    	android:padding="5dp"
+        >
+        <ImageView
+            android:id="@+id/imahe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+       	    android:onClick="bt_back"
+            android:padding="10dp"
+            android:src="@mipmap/left_arrow_icon" />
+        <TextView android:id="@+id/Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详细内容"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        
+        
+        <!-- <TextView android:id="@+id/back"
+            android:layout_width="30dp"
+		    android:layout_height="30dp"
+            android:text="返回"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:onClick="bt_back"
+            />
+        
+        <Button 
+            android:layout_toLeftOf="@+id/back"
+            android:layout_width="30dp"
+		    android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back11"
+            android:textColor="@color/black"
+            android:onClick="bt_back"
+            /> -->
+            
+        <Button
+                android:id="@+id/ziliao_upPic"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+
+			android:background="@null"
+                android:textSize="15sp" 
+                android:text="22"
+                android:visibility="gone"/>
+    </RelativeLayout>
+	  	<Gallery
+	    	android:id="@+id/ziliao02_gallery1"
+	    	android:background="#55000000"
+	    	android:visibility="gone"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:spacing="6dp"/>
+
+		<TextView
+			android:id="@+id/zlcl01_T3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#eee"
+			android:lineSpacingExtra="1dp"
+			android:padding="6dp"
+			android:lineSpacingMultiplier="1.4"
+			android:textColor="@color/black"
+			android:visibility="gone"
+			android:textSize="16sp" />
+	  	<WebView
+	  	    android:id="@+id/ziliaowebView01"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="fill_parent" />
+
+	</LinearLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/ziliao01R"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+		android:background="#eee"
+	    android:layout_height="55dip"
+	  >
+	    
+	    <Button 
+	        android:id="@+id/ziliao02_down"
+	       	    android:layout_height="35dp"
+	            android:layout_width="60dp" 
+	            android:padding="5dp"
+        		
+        		android:layout_alignParentLeft="true" 
+        		android:layout_centerVertical="true"
+        		android:text=" 退  回 "
+				android:textColor="#3399FF"
+        		android:textSize="16dp"
+        		android:layout_marginLeft="10dp"
+			android:background="@null"
+			/>
+	    
+	    <TextView 
+	        android:id="@+id/ziliao02_sZLZT"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+	        android:text="@string/ziliao01_t1"
+	        android:layout_centerVertical="true"
+	        android:textSize="18sp"
+	        android:textColor="#FFFFFF"
+	        android:visibility="gone"/>
+	    
+	    <Button 
+	        	android:id="@+id/ziliao02_up"
+        	    android:layout_height="35dp"
+	            android:layout_width="wrap_content" 
+	            android:padding="5dp"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginLeft="15dp"
+        		android:text="  提  交  "
+				android:textColor="#3399FF"
+        		android:textSize="16dp"
+        		android:layout_marginRight="10dp"
+			android:background="@null"  />
+
+	 
+<Button
+	        android:id="@+id/ziliao02_zj"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dp"
+	     	android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+			android:background="@null"
+	        android:paddingLeft="17dp"
+	        android:paddingRight="17dp"
+	        android:text="转交"
+			android:textColor="#3399FF"
+	        android:textSize="15dp"
+			android:visibility="gone"
+			/>
+	    <Button  
+	        android:id="@+id/ziliao02_js"
+			android:background="@color/blue"
+	        android:layout_width="60dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="9dp"
+	        android:layout_toRightOf="@+id/ziliao02_zj"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:padding="5dp"
+	        android:text="结  束"
+	        android:textColor="#fff"
+	        android:textSize="14dp"
+			android:visibility="gone"/>
+
+	</RelativeLayout>
+</RelativeLayout>

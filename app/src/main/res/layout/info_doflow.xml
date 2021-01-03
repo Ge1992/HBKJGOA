@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:fitsSystemWindows="true"
+    android:gravity="left">
+
+    <RelativeLayout
+        android:id="@+id/Rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/Image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="7dp" />
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Image1"
+            android:text="欢迎你，用户名!"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="bt_back2"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Rl1"
+        android:background="#179efc"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imahe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="bt_back"
+            android:padding="10dp"
+            android:src="@mipmap/left_arrow_icon" />
+
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="流程选择"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+        <!-- <TextView android:id="@+id/back"
+            android:layout_width="30dp"
+		    android:layout_height="30dp"
+            android:text="返回"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:onClick="bt_back"
+            />
+        
+        <Button 
+            android:layout_toLeftOf="@+id/back"
+            android:layout_width="30dp"
+		    android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back11"
+            android:textColor="@color/black"
+            android:onClick="bt_back"
+            /> -->
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="bt_back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/zlcl01_R1"
+        android:layout_below="@+id/Rl2">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tspr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="10dip"
+                android:text="下一步审批人:"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/zlcl01_B31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tspr1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/out1_selector4"
+                android:padding="11dip"
+                android:text="@string/zlcl01_B11"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/zlcl01_T31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tspr1"
+                android:layout_marginTop="3dip"
+                android:layout_toLeftOf="@+id/zlcl01_B31"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/R1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tspr"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/zlcl01_B3"
+                android:background="@drawable/edittext_style"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/zlcl01_T311"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/edittext_style"
+                    android:hint="点击选择处理人"
+                    android:lineSpacingExtra="1dp"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tspr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/R3"
+                android:padding="10dip"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/R2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tspr2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/zlcl01_B3"
+                android:background="@drawable/edittext_style"
+                android:visibility="gone"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/zlcl01_T3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/edittext_style"
+                    android:hint="@string/zlcl01_T3"
+                    android:lineSpacingExtra="1dp"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tspr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/R3"
+                android:padding="10dip"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/zlcl01_B311"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tspr1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/out1_selector4"
+                android:padding="11dip"
+                android:text="选择人员"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/zlcl01_B3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tspr"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/out1_selector4"
+                android:padding="11dip"
+                android:text="@string/zlcl01_B1"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        <RelativeLayout
+            android:id="@+id/R3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tspr1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dip"
+            android:layout_toLeftOf="@+id/zlcl01_B3"
+            android:background="@drawable/edittext_style"
+            android:clickable="true">
+            <Spinner
+                android:id="@+id/S1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:padding="10dip" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </RadioGroup>
+
+
+
+
+
+
+        </RelativeLayout>
+            <CheckBox
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/R3"
+                android:text="根据条件字段自动判断下一节点"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t2"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/edittext_style"
+                android:padding="10dip"
+                android:text="评审模式："
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c1"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/edittext_style"
+                android:padding="10dip"
+                android:text="审批人选择模式："
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/t3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t2"
+                android:padding="10dip"
+                android:text="审批记录："
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <!--     	<WebView
+                        android:layout_below="@+id/t3_1"
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:editable="false"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:visibility="gone"
+                        />
+             -->
+            <RelativeLayout
+                android:id="@+id/zlcl01_R2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t3"
+                android:padding="5dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/zlcl01_T1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/zlcl01_T1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/zlcl01_T2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/zlcl01_T1"
+                    android:ems="10"
+                    android:hint="@string/zlcl01_T2"
+                    android:lines="5">
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/zlcl01_R1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/zlcl01_up"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/bule"
+            android:padding="5dp"
+            android:text="提  交"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</RelativeLayout>

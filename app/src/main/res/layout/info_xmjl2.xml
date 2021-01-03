@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+
+    android:background="#efeff4"
+   >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#179efc"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imahe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="bt_back"
+            android:padding="10dp"
+            android:src="@mipmap/left_arrow_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="邮件信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/fj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="附件"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="12dp"
+                android:background="#D1D8E0">
+
+                <TableRow android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:padding="4dp"
+                        android:text="邮件主题"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow>
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="发送人"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="接收人"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+
+                <TableRow android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:padding="4dp"
+                        android:text="发送时间"
+
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="#3592D1"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="邮件内容"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+<RelativeLayout
+        android:id="@+id/info_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="2dp" >
+
+            <LinearLayout
+                android:id="@+id/info_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#ffffff"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/rizhi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回复"
+                    android:textColor="#9A9A9A"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

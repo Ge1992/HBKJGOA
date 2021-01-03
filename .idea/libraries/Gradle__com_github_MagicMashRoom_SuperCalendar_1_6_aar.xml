@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.MagicMashRoom:SuperCalendar:1.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperCalendar-1.6.aar/ebc51bd4427eb7f60188da44f8c8a9b6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperCalendar-1.6.aar/ebc51bd4427eb7f60188da44f8c8a9b6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperCalendar-1.6.aar/ebc51bd4427eb7f60188da44f8c8a9b6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperCalendar-1.6.aar/93d922cd11d4d3b3b2ea8e6fa2c46d48/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperCalendar-1.6.aar/93d922cd11d4d3b3b2ea8e6fa2c46d48/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperCalendar-1.6.aar/93d922cd11d4d3b3b2ea8e6fa2c46d48/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.MagicMashRoom/SuperCalendar/1.6/187d1411a1d19e6d5ef8bad398efaeadd05f5a78/SuperCalendar-1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

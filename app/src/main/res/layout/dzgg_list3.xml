@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dzgg_R1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imageItem"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="盐城市实施江苏省城市规划管理"
+        android:textColor="#000"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text01"
+        android:layout_toRightOf="@id/imageItem"
+        android:maxLines="2"
+        android:paddingLeft="5dp"
+        android:text="要闻发布"
+        android:textColor="#666"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text02"
+        android:layout_toRightOf="@id/imageItem"
+        android:maxLines="2"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="发布人：周惠"
+        android:textColor="#666" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text03"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imageItem"
+        android:maxLines="2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="2017-01-13 10:13:44"
+        android:textColor="#666" />
+<com.example.hbkjgoa.util.NoScrollGridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" >
+    </com.example.hbkjgoa.util.NoScrollGridView>
+</LinearLayout>

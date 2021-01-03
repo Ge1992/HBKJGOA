@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">移动办公</string>
+    <string name="package_name">com.example.hbkjgoa</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新</string>
+    <string name="p2refresh_doing_end_refresh">加载中</string>
+    <string name="p2refresh_refresh_lasttime">最近更新</string>
+    <color name="hui">#55000000</color>
+
+    <color name="click">#B6DA53</color>
+    <string name="apk_Location">/woyeapp/DZFANew.apk</string>
+    <string name="apk_url">http://116.62.238.239:61645/cad/DZFANew.apk</string>
+    <string name="http_url">http://116.62.238.239:61645/</string>
+    <string name="moreact_t1">姓名</string>
+    <string name="moreact_t2">部门</string>
+    <string name="moreact_t3">职务</string>
+    <string name="moreact_t4">电话</string>
+    <string name="moreact_t5">地址</string>
+    <string name="moreact_t6">设置</string>
+
+
+    <string name="tab1_title">首页</string>
+    <string name="zlgl2_text1">待办流程</string>
+    <string name="zlgl2_text2">已办流程</string>
+    <string name="zlgl2_text3">全部流程</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <color name="chose_image_bule_overlay">#660D92DD</color>
+    <color name="chose_image_none_color">#00000000</color>
+
+    <string name="ziliao01_t1">请输入项目名称</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+
+    <string name="load_fail">加载失败</string>
+
+
+    <string name="options">操作</string>
+
+
+    <string name="share">分享</string>
+    <string name="comment">评论</string>
+    <string name="praise">点赞</string>
+    <string name="collection">收藏</string>
+    <string name="reply_name">回复</string>
+    <string name="leaveMessage">发送</string>
+
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+
+    <string name="zlcl01_T1">处理意见：</string>
+    <string name="zlcl01_T2">请填写您的建议！</string>
+    <string name="zlcl01_T3"></string>
+    <string name="zlcl01_B1">选择人员</string>
+    <string name="zlcl01_B11">选择公司</string>
+    <string name="zlcl01_title">工作审批</string>
+
+    <string name="zlgl2_text1_1">发起人:</string>
+    <string name="zlgl2_text1_2">发起时间:</string>
+    <string name="zlgl2_text1_3">最新审批时间:</string>
+    <string name="zlgl2_text1_4">当前状态:</string>
+
+
+    <string name="core_1">扫码</string>
+    <string name="core_2">扫码启动窗口</string>
+    <string name="core_3">网页启动窗口</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#179efc"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设备记录"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imahe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="bt_back"
+            android:padding="10dp"
+            android:src="@mipmap/left_arrow_icon" />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab2"
+        android:layout_width="match_parent"
+        app:tabPaddingStart="12dp"
+        app:tabPaddingEnd="8dp"
+        app:tabMaxWidth="200dp"
+
+        app:tabMinWidth="20dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@android:color/holo_red_light"
+        app:tabRippleColor = "@android:color/transparent"
+        app:tabBackground="@color/white"
+        android:layout_height="wrap_content"/>
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.example.hbkjgoa.xlistview.XListView
+            android:id="@+id/XKListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+             android:cacheColorHint="#00000000"
+            android:footerDividersEnabled="false" />
+<ImageView
+            android:id="@+id/chat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/zs"
+            android:paddingRight="14dp"
+            android:src="@mipmap/ss" />
+        <TextView
+            android:id="@+id/zs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

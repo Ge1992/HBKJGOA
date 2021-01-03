@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/btground">
+
+  <ImageView
+      android:id="@+id/imahe"
+      android:layout_width="40dp"
+      android:layout_height="30dp"
+      android:layout_marginLeft="10dp"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:onClick="bt_back"
+      android:src="@mipmap/left_arrow_icon" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="标题"
+        android:textSize="19sp" />
+  <TextView
+      android:id="@+id/B1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="10dp"
+      android:textColor="@color/white"
+      android:text="新建"
+      android:textSize="16sp"
+      android:visibility="gone"
+      />
+
+</RelativeLayout>

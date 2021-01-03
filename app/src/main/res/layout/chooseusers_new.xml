@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+	android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+    <RelativeLayout
+		android:id="@+id/R1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#179efc"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择人员"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imahe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="bt_back"
+            android:padding="10dp"
+            android:src="@mipmap/left_arrow_icon" />
+
+        <Button
+            android:id="@+id/serch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="新建"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>    
+    
+    
+<!--  	<LinearLayout android:id="@+id/L1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Rl2"
+         android:gravity="center"
+         android:background="@drawable/search_bar_bg" >
+
+         <EditText
+             android:id="@+id/editText1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:hint="搜索"
+             android:singleLine="true"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:textColor="#000"
+             android:background="@drawable/search_bar_edit_bg" >
+                     
+         </EditText>
+         
+     </LinearLayout>-->
+
+	<LinearLayout
+		android:id="@+id/L1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:paddingTop="8dp"
+		android:paddingRight="8dp"
+		android:paddingBottom="8dp"
+		android:paddingLeft="8dp" >
+
+		<EditText
+			android:id="@+id/editText1"
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:layout_weight="10"
+			android:hint="人员查找"
+			android:paddingLeft="8dp"
+			android:gravity="center_vertical"
+			android:background="@drawable/edittext_bg"
+			android:textSize="15sp" />
+
+		<!--<Button
+			android:id="@+id/load"
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:layout_marginLeft="8dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="#6BD0DF"
+			android:text="搜索"
+			android:textColor="@color/white"
+			android:textSize="15sp"/>-->
+	</LinearLayout>
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+	  <com.example.hbkjgoa.xlistview.XListView
+		  android:id="@+id/XKListView"
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:layout_above="@+id/title1"
+		  android:layout_alignParentLeft="true"
+		  android:layout_marginLeft="0dp"
+		  android:layout_marginBottom="-1dp"
+		  android:divider="@null"
+		  android:footerDividersEnabled="false" />
+
+	  <RelativeLayout
+            android:id="@+id/title1" 
+  			android:layout_width="fill_parent"
+  			android:layout_height="55dp"
+  			android:layout_alignParentBottom="true"
+  			android:gravity="center_vertical"  >
+
+			<Button 
+			    android:id="@+id/sub"
+				android:layout_width="140dp"
+                android:layout_height="37dp"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:text="确 定"
+        		android:textColor="#fff"
+        		android:textSize="16dp"
+			    android:background="@drawable/out1_selector4"
+			    />       
+		</RelativeLayout>
+    </RelativeLayout>
+    
+ </LinearLayout>

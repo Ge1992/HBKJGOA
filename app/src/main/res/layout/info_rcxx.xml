@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efeff4"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/btground"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imahe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="bt_back"
+            android:padding="10dp"
+            android:src="@mipmap/left_arrow_icon" />
+
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详细信息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+
+
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="12dp"
+                android:background="#D1D8E0">
+
+            <TableRow android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0.01dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:minHeight="35dp"
+                    android:padding="4dp"
+                    android:text="姓名"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0.01dp"
+                    android:layout_weight="2"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:minHeight="35dp"
+                    android:padding="4dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="工作时间"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="性别"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+
+                <TableRow android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:padding="4dp"
+                        android:text="归属地区"
+
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="出生日期"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="学历"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="所学专业"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t7"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="人员性质"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t8"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="工作单位及职务"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t9"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="手机"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t10"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/blue"
+                        android:textSize="15sp" />
+                </TableRow >
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="录入人"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t11"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="录入时间"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t12"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+                <TableRow android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text="备注说明"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/t13"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="0.01dp"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:minHeight="35dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow >
+
+
+
+            </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
